@@ -20,7 +20,7 @@ class StepsController < ApplicationController
   end
 
   def create
-    @step = guide.steps.create(step_params)
+    @step = guide.steps.build(step_params)
 
     respond_to do |format|
       if @step.save
