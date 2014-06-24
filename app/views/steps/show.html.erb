@@ -15,5 +15,6 @@
   <%= @step.content %>
 </p>
 
+<%= link_to 'New', new_guide_step_path( @step.guide )  %>
 <%= link_to 'Edit', edit_guide_step_path(@step.guide, @step) %> |
 <%= link_to 'Back', guide_steps_path(@step.guide) %>
